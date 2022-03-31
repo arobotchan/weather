@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----BootStrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="container my-5 mx-auto">
+        <h1 class="text-center my-4">Weather App</h1>
+        <!-- cityForm -->
+        <form class="change-location my-4 text-center">
+            <label for="city">Enter a location for weather information</label>
+            <input type="text" name="city" class="form-control" p-4">
+        </form>
+        <!-- card -->
+        <div class="card shadow-lg rounded d-none">
+            <!-- time -->
+            <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+            <!-- icon -->
+            <div class="icon bg-light mx-auto text-center">
+                <img src="" alt="">
+            </div>
+            <!-- details -->
+            <div class="details text-muted text-uppercase text-center">
+                <h5 class="my-3">City name</h5>
+                <div class="my-3">Weather condition</div>
+                <div class="display-4 my-4">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="forecast.js"> </script>
+    <script src="app.js"> </script>
+
+</body>
+
+</html>
